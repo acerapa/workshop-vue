@@ -26,7 +26,7 @@ const apiHandler = (url, method = 'get', body = null, headers = null) => {
         }
 
         return response.json().then(error => {
-            const e = new Error('Something went wrong');
+            const e = new Error('Something went wrong.');
             e.data = error;
             throw e;
         });
