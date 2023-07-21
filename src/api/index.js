@@ -1,7 +1,7 @@
 "use strict";
 
 
-const baseUrl = "http://localhost:3000";
+const baseUrl = "http://localhost:8000/api";
 
 const apiHandler = (url, method = 'get', body = null, headers = null) => {
     const config = {

@@ -7,10 +7,6 @@ export const useContactsStore = defineStore('contacts', {
     contact: null
   }),
   actions: {
-    addContact(contact) {
-      this.contacts.push(contact)
-    },
-
     async getContacts() {
       const contacts = await apiHandler('/contacts')
       this.contacts = contacts
@@ -22,6 +18,7 @@ export const useContactsStore = defineStore('contacts', {
     },
 
     async addContact(contact) {
+      contact = {...contact};
       const newContact = await apiHandler('/contacts', 'post', contact)
       this.contacts.push(newContact)
     },

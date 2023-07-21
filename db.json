@@ -1,18 +1,23 @@
 {
-    "contacts" : [
-        {
-            "id": 1,
-            "name" : "John Doe",
-            "email" : "doe@email.com",
-            "contactNumber" : "555-555-5555",
-            "address" : "123 Main St"
-        },
-        {
-            "id": 2,
-            "name" : "Jane Doe",
-            "email" : "jane@email.com",
-            "contactNumber" : "555-555-5555",
-            "address" : "123 Main St"
-        }
-    ]
+  "contacts": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "doe@email.com",
+      "contactNumber": "555-555-5555",
+      "address": "123 Main St"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "email": "jane@email.com",
+      "contactNumber": "555-555-5555",
+      "address": "123 Main St"
+    },
+    [],
+    [],
+    [],
+    [],
+    []
+  ]
 }

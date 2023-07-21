@@ -32,8 +32,11 @@
               <RouterLink :to="`/contacts/${ contact.id }`">
                 <button class="view-btn">View</button>
               </RouterLink>
-              <button class="delete-btn">Delete</button>
+              <button class="delete-btn" v-on:click="handleDelete(contact)">Delete</button>
             </td>
+          </tr>
+          <tr v-if="!contacts.length">
+            <td colspan="5" style="text-align: center;">No Data</td>
           </tr>
         </tbody>
       </table>
@@ -55,6 +58,11 @@ onMounted(async () => {
   contacts.value = contactStore.contacts;
 });
 
+
+const handleDelete =  async (contact) => {
+  console.log(contact);
+  await contactStore.deleteContact(contact);
+}
 </script>
 
 <style scoped>
